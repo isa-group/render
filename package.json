@@ -1,0 +1,38 @@
+{
+  "name": "governify-render",
+  "version": "2.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isa-group/governify-render.git"
+  },
+  "author": {
+    "name": "ISA group",
+    "web": "http://www.isa.us.es/"
+  },
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/isa-group/governify-render/issues"
+  },
+  "homepage": "https://github.com/isa-group/governify-render#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "basic-auth": "^2.0.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "helmet": "^3.23.3",
+    "js-yaml": "^3.14.0",
+    "mustache": "^4.0.1",
+    "winston": "^2.4.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2"
+  },
+  "buildOn": "2018-05-09"
+}
