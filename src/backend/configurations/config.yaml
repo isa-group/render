@@ -10,17 +10,17 @@ production:
     listenOnHttps: false
     enableHTTPBasicAuth: true
   default_render:
-    view: {{DEFAULT_VIEW}}{{^DEFAULT_VIEW}}/index/view.html{{/DEFAULT_VIEW}}
-    model: {{DEFAULT_MODEL}}{{^DEFAULT_MODEL}}/index/model.json{{/DEFAULT_MODEL}}
-    controller: {{DEFAULT_CONTROLLER}}{{^DEFAULT_CONTROLLER}}/index/controller.js{{/DEFAULT_CONTROLLER}}
+    view: {{{DEFAULT_VIEW}}}{{{^DEFAULT_VIEW}}}/index/view.html{{{/DEFAULT_VIEW}}}
+    model: {{{DEFAULT_MODEL}}}{{{^DEFAULT_MODEL}}}/index/model.json{{{/DEFAULT_MODEL}}}
+    controller: {{{DEFAULT_CONTROLLER}}}{{{^DEFAULT_CONTROLLER}}}/index/controller.js{{{/DEFAULT_CONTROLLER}}}
   log:
     level: info
     file: './logs/pro-logs.log' #Where log file will be saved. Date will be concatenated before the name.
     maxSize: 10000000 #(10MB) Maximum file log size, if one file reaches it, a new file is created.
     maxFiles: 30 # Max Files that can be created per day reaching the maxSize.
   auth:
-    user: {{LOGIN_USER}}{{^LOGIN_USER}}governify-admin{{/LOGIN_USER}}
-    password: {{LOGIN_PASSWORD}}{{^LOGIN_PASSWORD}}governify-project{{/LOGIN_PASSWORD}}
+    user: {{{LOGIN_USER}}}{{{^LOGIN_USER}}}governify-admin{{{/LOGIN_USER}}}
+    password: {{{LOGIN_PASSWORD}}}{{{^LOGIN_PASSWORD}}}governify-project{{{/LOGIN_PASSWORD}}}
 
 development:
   server: 
@@ -34,12 +34,12 @@ development:
     listenOnHttps: false
     enableHTTPBasicAuth: true
   default_render:
-    view: {{DEFAULT_VIEW}}{{^DEFAULT_VIEW}}/index/view.html{{/DEFAULT_VIEW}}
-    model: {{DEFAULT_MODEL}}{{^DEFAULT_MODEL}}/index/model.json{{/DEFAULT_MODEL}}
-    controller: {{DEFAULT_CONTROLLER}}{{^DEFAULT_CONTROLLER}}/index/controller.js{{/DEFAULT_CONTROLLER}}
+    view: {{{DEFAULT_VIEW}}}{{{^DEFAULT_VIEW}}}/index/view.html{{{/DEFAULT_VIEW}}}
+    model: {{{DEFAULT_MODEL}}}{{{^DEFAULT_MODEL}}}/index/model.json{{{/DEFAULT_MODEL}}}
+    controller: {{{DEFAULT_CONTROLLER}}}{{{^DEFAULT_CONTROLLER}}}/index/controller.js{{{/DEFAULT_CONTROLLER}}}
   auth:
-    user: {{LOGIN_USER}}{{^LOGIN_USER}}governify-admin{{/LOGIN_USER}}
-    password: {{LOGIN_PASSWORD}}{{^LOGIN_PASSWORD}}governify-project{{/LOGIN_PASSWORD}}
+    user: {{{LOGIN_USER}}}{{{^LOGIN_USER}}}governify-admin{{{/LOGIN_USER}}}
+    password: {{{LOGIN_PASSWORD}}}{{{^LOGIN_PASSWORD}}}governify-project{{{/LOGIN_PASSWORD}}}
   
   log:
     level: debug
@@ -59,13 +59,13 @@ testing:
     listenOnHttps: false
     enableHTTPBasicAuth: false
   default_render:
-    view: {{DEFAULT_VIEW}}{{^DEFAULT_VIEW}}/index/view.html{{/DEFAULT_VIEW}}
-    model: {{DEFAULT_MODEL}}{{^DEFAULT_MODEL}}/index/model.json{{/DEFAULT_MODEL}}
-    controller: {{DEFAULT_CONTROLLER}}{{^DEFAULT_CONTROLLER}}/index/controller.js{{/DEFAULT_CONTROLLER}}
+    view: {{{DEFAULT_VIEW}}}{{{^DEFAULT_VIEW}}}/index/view.html{{{/DEFAULT_VIEW}}}
+    model: {{{DEFAULT_MODEL}}}{{{^DEFAULT_MODEL}}}/index/model.json{{{/DEFAULT_MODEL}}}
+    controller: {{{DEFAULT_CONTROLLER}}}{{{^DEFAULT_CONTROLLER}}}/index/controller.js{{{/DEFAULT_CONTROLLER}}}
 
   auth:
-    user: {{LOGIN_USER}}{{^LOGIN_USER}}governify-admin{{/LOGIN_USER}}
-    password: {{LOGIN_PASSWORD}}{{^LOGIN_PASSWORD}}governify-project{{/LOGIN_PASSWORD}}
+    user: {{{LOGIN_USER}}}{{{^LOGIN_USER}}}governify-admin{{{/LOGIN_USER}}}
+    password: {{{LOGIN_PASSWORD}}}{{{^LOGIN_PASSWORD}}}governify-project{{{/LOGIN_PASSWORD}}}
   log:
     file: './logs/test-logs.log' #Where log file will be saved. Date will be concatenated before the name.
     maxSize: 10000000 #(10MB) Maximum file log size, if one file reaches it, a new file is created.
