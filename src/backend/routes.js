@@ -26,6 +26,7 @@ const fs = require('fs');
 const axios = require('axios')
 const jsyaml = require('js-yaml')
 const mustache = require("mustache");
+mustache.escape = function (text) { return text; };
 const config = require('./configurations')
 
 const logger = require("./logger");
@@ -96,8 +97,8 @@ router.get("/render", async function (req, res) {
                 FILE_VIEW: fileView
             }
             logger.info("Displaying render");
-            var htmlTemplate = fs.readFileSync('./src/backend/model.mustache', 'utf8');
-            var htmlRendered = mustache.render(htmlTemplate, files)
+            var htmlTemplate = fs.readFileSync('./src/backend/layout.html', 'utf8');
+            var htmlRendered = mustache.render(htmlTemplate, files, {}, ['$_[', ']']);
             res.send(htmlRendered);
         } catch (err) {
             logger.warning('Error getting files: ' + err)
