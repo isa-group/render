@@ -97,7 +97,7 @@ router.get("/render", async function (req, res) {
                 FILE_VIEW: fileView
             }
             logger.info("Displaying render");
-            var htmlTemplate = fs.readFileSync('./src/backend/layout.html', 'utf8');
+            var htmlTemplate = fs.readFileSync('./src/backend/layouts/' + config.layout, 'utf8');
             var htmlRendered = mustache.render(htmlTemplate, files, {}, ['$_[', ']']);
             res.send(htmlRendered);
         } catch (err) {
