@@ -46,7 +46,7 @@ router.get('/', function (req, res) {
 async function getFileFromString(URL) {
     var file;
     if (URL.startsWith('https://') || URL.startsWith('http://')) {
-        console.log("Getting external file: " + URL)
+        logger.info("Getting external file: " + URL)
         await axios({
             url: URL,
             method: 'GET',
@@ -65,7 +65,7 @@ async function getFileFromString(URL) {
     } else {
         //Check first file exist to return null
         if (fs.existsSync('./src/frontend' + URL)) {
-            console.log("Getting file locally: " + URL)
+            logger.info("Getting file locally: " + URL)
             file = await fs.readFileSync('./src/frontend' + URL, 'utf8');
         }
         else {
