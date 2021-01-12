@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/governify/render.git"
+    "url": "https://github.com/governify/render"
   },
   "author": {
     "name": "ISA group",
@@ -45,5 +45,8 @@
     "ignore": [
       "/tests/**"
     ]
+  },
+  "docker": {
+    "url": "https://hub.docker.com/r/governify/render"
   }
 }
