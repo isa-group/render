@@ -1,3 +1,9 @@
+# Governify Render
+[![Node.js CI](https://github.com/governify/render/workflows/Node.js%20CI/badge.svg?branch=master)](https://github.com/governify/render/actions)
+[![Coverage Status](https://coveralls.io/repos/github/governify/render/badge.svg)](https://coveralls.io/github/governify/render)
+<a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-semistandard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+
 ## Copyright notice
 
 **<%= pkg.name %>** is open-source software available under the GNU General Public License (GPL) version 3 (GPL v3).
