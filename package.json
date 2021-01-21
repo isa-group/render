@@ -43,7 +43,8 @@
   },
   "semistandard": {
     "ignore": [
-      "/tests/**"
+      "/tests/**",
+      "/src/frontend/utils"
     ]
   },
   "docker": {
